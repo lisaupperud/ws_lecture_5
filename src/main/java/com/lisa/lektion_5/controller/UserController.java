@@ -22,8 +22,14 @@ public class UserController {
     }
 
     @GetMapping("/br")
-    public ResponseEntity<String> test(){
+    public ResponseEntity<String> getBR(){
 
         return ResponseEntity.badRequest().build();
+    }
+
+    @GetMapping("/ise")
+    public ResponseEntity<String> getISE(){
+
+        return ResponseEntity.internalServerError().build();
     }
 }
