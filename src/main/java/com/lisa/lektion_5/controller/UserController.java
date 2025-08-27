@@ -27,6 +27,12 @@ public class UserController {
         return ResponseEntity.badRequest().build();
     }
 
+    @GetMapping("/nf")
+    public ResponseEntity<String> getNF(){
+
+        return ResponseEntity.notFound().build();
+    }
+
     @GetMapping("/ise")
     public ResponseEntity<String> getISE(){
 
